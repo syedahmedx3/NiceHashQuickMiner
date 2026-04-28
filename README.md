@@ -1,53 +1,66 @@
 # NiceHash QuickMiner
 
-Please use [Wiki](https://github.com/nicehash/NiceHashQuickMiner/wiki) (still work in progress but contains **most** of information you are after).
+[![Twitter Follow](https://img.shields.io/twitter/follow/NiceHashMining?style=social)](https://twitter.com/NiceHashMining)
+[![Wiki](https://img.shields.io/badge/docs-Wiki-blue)](https://github.com/nicehash/NiceHashQuickMiner/wiki)
 
-Why you should use NiceHash QuickMiner over NiceHash Miner? Read [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Why-NiceHash-QuickMiner).
+NiceHash QuickMiner is a professional, lightweight, and highly optimized miner featuring the first-ever **full LHR unlock** and integrated **OCTune** for maximum efficiency.
 
-**Do you own a workstation with many Quadro GPUs or server with many Tesla cards? [Monetize idle time with QuickMiner!](https://github.com/nicehash/NiceHashQuickMiner/wiki/Enterprise-mining)**
+> [!TIP]
+> **New to QuickMiner?** Learn why it is preferred over the standard NiceHash Miner [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Why-NiceHash-QuickMiner).
 
-NiceHash QuickMiner was the first software to fully unlock LHR cards. Read more [here.](https://www.nicehash.com/blog/post/100-lhr-unlock-at-nicehash-its-here)
+---
 
-For news, updates and important info regarding NiceHash QuickMiner, follow us on twitter: https://twitter.com/NiceHashMining
+## 🚀 Key Highlights
 
-Supported hardware:
-* NVIDIA GeForce GTX 1000 series with min. 4 GB of GDDRAM,
-* NVIDIA GeForce RTX 2000 series with min. 4 GB of GDDRAM,
-* NVIDIA GeForce RTX 3000 series with min. 4 GB of GDDRAM,
-* NVIDIA Quadro P series and later with min. 4 GB of GDDRAM,
-* NVIDIA Tesla P series and later,
-* Intel CPUs with AVX2,
-* AMD CPUs with AVX2.
-* AMD Radeon RX 400 series with min. 4GB of GDDRAM,
-* AMD Radeon RX 500 series with min. 4GB of GDDRAM,
-* AMD Radeon RX 5000 series with min. 4GB of GDDRAM,
-* AMD Radeon RX 6000 series with min. 64GB of GDDRAM,
-* AMD Radeon PRO series with min. 4GB of GDDRAM
+* **100% LHR Unlock:** The first software to fully unlock the potential of LHR cards. [Read more here.](https://www.nicehash.com/blog/post/100-lhr-unlock-at-nicehash-its-here)
+* **Enterprise Capabilities:** Optimized for workstations with Quadro GPUs and servers with Tesla cards. [Monetize idle enterprise hardware](https://github.com/nicehash/NiceHashQuickMiner/wiki/Enterprise-mining).
+* **Built-in Optimization:** Access to global optimization profiles via [data_010.json](https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_010.json).
 
-If you have GeForce RTX 3060, [read here about drivers](https://github.com/nicehash/NiceHashQuickMiner/wiki/GeForce-RTX-3060).
+---
 
-NiceHash QuickMiner contains latest version of [Excavator](https://github.com/nicehash/excavator) bundled with:
-* watchdog (NiceHashQuickMiner.exe),
-* OCTune and
-* (optional) XMRig CPU Miner (xmrig.exe).
+## 📦 Bundled Components
 
-Data for optimisation profiles is here: https://github.com/nicehash/NiceHashQuickMiner/blob/main/optimize/data_010.json<br />
+NiceHash QuickMiner includes the latest version of [Excavator](https://github.com/nicehash/excavator) integrated with:
+* **Watchdog:** Automated system monitoring and recovery (`NiceHashQuickMiner.exe`).
+* **OCTune:** Advanced browser-based overclocking and tuning interface.
+* **XMRig:** (Optional) High-performance CPU Miner (`xmrig.exe`).
 
-**If you have any suggestions for improvements (better clocks for better efficiency), open [issue](https://github.com/nicehash/NiceHashQuickMiner/issues) and let us know.**
+---
 
-# Download, installation, how to run, uninstallation
+## 💻 Supported Hardware
 
-You can find these information in [Wiki](https://github.com/nicehash/NiceHashQuickMiner/wiki).
+### NVIDIA GPUs (Min. 4 GB GDDRAM)
+* GeForce GTX 1000 series
+* GeForce RTX 2000 / 3000 series
+* Quadro P series and later
+* Tesla P series and later
 
-# FAQ
+### AMD GPUs
+* Radeon RX 400 / 500 / 5000 series (Min. 4 GB)
+* Radeon RX 6000 series (Min. 6 GB)
+* Radeon PRO series (Min. 4 GB)
 
-Available [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/FAQ).
+### CPUs
+* Intel and AMD CPUs with **AVX2** support.
 
-# Troubleshooting
+> [!CAUTION]
+> **GeForce RTX 3060 Users:** Specific driver versions are required. [Refer to the Driver Wiki](https://github.com/nicehash/NiceHashQuickMiner/wiki/GeForce-RTX-3060).
 
-Available [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Troubleshooting).
-Or on official NiceHash [help page.](https://www.nicehash.com/support/mining-help/quickminer/what-is-nicehash-quickminer)
+---
 
-# Tips & Tricks
+## 📚 Documentation & Resources
 
-Available [here](https://github.com/nicehash/NiceHashQuickMiner/wiki/Tips-&-tricks).
+| Category | Links |
+| :--- | :--- |
+| **Setup** | [Download, Install & Uninstall Guide](https://github.com/nicehash/NiceHashQuickMiner/wiki) |
+| **Support** | [Official FAQ](https://github.com/nicehash/NiceHashQuickMiner/wiki/FAQ) |
+| **Fixes** | [Troubleshooting Guide](https://github.com/nicehash/NiceHashQuickMiner/wiki/Troubleshooting) \| [Help Page](https://www.nicehash.com/support/mining-help/quickminer/what-is-nicehash-quickminer) |
+| **Advanced** | [Tips & Tricks](https://github.com/nicehash/NiceHashQuickMiner/wiki/Tips-&-tricks) |
+
+---
+
+## 🤝 Contributions
+
+We welcome suggestions for clock settings or performance improvements.
+* **Suggestions:** Open an [Issue](https://github.com/nicehash/NiceHashQuickMiner/issues) to share your efficiency clocks.
+* **Socials:** Follow us on Twitter for real-time updates: [@NiceHashMining](https://twitter.com/NiceHashMining)
