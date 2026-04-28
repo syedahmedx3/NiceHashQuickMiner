@@ -1,41 +1,96 @@
 ---
-name: Bug report
-about: Create a report to help us improve
-title: "[BUG] "
-labels: bug
+name: Bug Report
+about: Report a defect to help us improve reliability and performance
+title: "[BUG]: "
+labels: ["bug", "needs-triage"]
 assignees: ''
+---
+
+## 🐞 Summary
+Provide a concise, high-level description of the issue.
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## 📊 Impact
+- **Severity:** (Critical / High / Medium / Low)  
+- **Frequency:** (Always / Often / Intermittent / Rare)  
+- **User Impact:** (e.g. crash, data loss, UI glitch, performance degradation)
 
-**To Reproduce**
-Steps to reproduce the behavior:
+---
+
+## 🧭 Environment
+Provide complete environment details:
+- **App Version:** (e.g. 1.2.3)
+- **Release Channel:** (Stable / RC / Beta / Nightly)
+- **OS & Version:** (e.g. Windows 11 23H2, Ubuntu 24.04)
+- **CPU:**  
+- **RAM:**  
+- **GPU(s):**  
+- **Driver Version(s):** (e.g. NVIDIA 555.xx)
+- **Installation Type:** (Clean install / Upgrade / Portable / Containerized)
+
+---
+
+## 🔁 Steps to Reproduce
+Provide a minimal, deterministic reproduction flow:
 1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+2. Click on '...'
+3. Perform '...'
+4. Observe the issue
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+> ⚠️ If reproduction is inconsistent, describe known patterns or conditions.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+---
 
-**Version affected (please complete the following information):**
- - Version number [e.g. 0.4.5.5]
- - RC or STABLE?
+## ✅ Expected Result
+Describe the correct or intended behavior.
 
-**NVIDIA driver version**
-Which one do you use?
+---
 
-**Hardware**
-Describe GPUs used and how are GPUs connected to the motherboard.
-CPU?
+## ❌ Actual Result
+Describe what actually happens.
 
-**Logs**
-Activate logging first, then record event - bug - then export logs into a .zip file and attach it when submitting this issue.
+---
 
-**Additional context**
-Add any other context about the problem here.
+## 📸 Evidence
+Attach relevant artifacts:
+- Screenshots
+- Screen recordings
+- Crash dialogs
+
+---
+
+## 📂 Logs & Diagnostics
+Provide diagnostic data:
+- Enable debug/verbose logging
+- Reproduce the issue
+- Attach logs as `.zip`
+
+Optional but helpful:
+- Stack traces
+- Crash dumps
+- Profiling data
+
+---
+
+## 🧪 Regression?
+- **Is this a regression?** (Yes / No / Unknown)  
+- **Last Known Working Version:**  
+
+---
+
+## 🔍 Workarounds
+List any known temporary fixes or mitigations.
+
+---
+
+## 🧩 Additional Context
+Include any other relevant details (config changes, plugins, network conditions, etc.).
+
+---
+
+## ✅ Pre-Submission Checklist
+- [ ] I have searched for existing issues
+- [ ] I have provided reproducible steps
+- [ ] I have included logs or diagnostic data
+- [ ] I have filled in environment details
