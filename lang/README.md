@@ -1,47 +1,68 @@
-# NiceHash QuickMiner multilanguage support
+# NiceHash QuickMiner Multilanguage Support
 
-From [version 0.5.0.0 NiceHash QuickMiner](https://github.com/nicehash/NiceHashQuickMiner/releases) comes with multilanguage support.
+From  **[version 0.5.0.0 NiceHash QuickMiner](https://github.com/nicehash/NiceHashQuickMiner/releases)** features comprehensive multilanguage support. This guide provides the workflow for creating, testing, and updating language files.
+---
 
-### How to create language file?
-Download [dump_en.json](/lang/dump_en.json). All strings are marked with token (first element of the array). Modify only second element of the array.
+## 🏗️ How to Create a Language File
 
-Name your file with two letters - code of the language (eg: en, de, pt, es, ru, ...) plus .json. File format **must be JSON and file encoding must be UTF8!** All language files are located in this directory. Verify your JSON file. There are many tools, for example: https://jsonformatter.curiousconcept.com/
+1.  **Download the Base:** Download [dump_en.json](/lang/dump_en.json).
+2.  **Edit Strings:** All strings are marked with a token (the first element of the array). **Modify only the second element.**
+3.  **Naming Convention:** Use the two-letter language code (e.g., `en`, `de`, `pt`, `es`, `ru`) plus the `.json` extension.
+4.  **Requirements:** * **Format:** Must be valid JSON.
+    * **Encoding:** Must be **UTF-8**.
+    * **Validation:** Use tools like [JSON Formatter](https://jsonformatter.curiousconcept.com/) to verify your file.
+5.  **Submit:** Submit a Pull Request for your translation to be reviewed and accepted.
 
-Submit pull request and your translation may gets accepted.
+---
 
-### How to test language file?
-Pick any existing language besides **en** and quit NiceHash QuickMiner. Open directory `.\langs\`. You will see language file of the chosen language. Open it and set your language file to have the same `version`. Delete chosen language file, copy in your language file and set your language file to have same name as deleted language. Start NiceHash QuickMiner - selected language will be yours.
+## 🧪 How to Test a Language File
 
-Append command line arguments to view special dialogs as stated in the following table:
-Command Line | Dialog Shown
--------------|--------------
---install | Download & installer
---uninstall | Uninstall dialog
---count | Windows start-up counter before standard launch
---updatedfrom 0.3.0.0 | Displays various update-related message boxes before standard launch
+1.  Pick an existing language (other than **en**) and quit NiceHash QuickMiner.
+2.  Navigate to the `.\\langs\\` directory.
+3.  Identify the chosen language file, open it, and copy the `version` value into your new language file.
+4.  Delete the original language file, copy your new file into the directory, and rename it to match the deleted file.
+5.  Start NiceHash QuickMiner; the selected language will now display your translations.
 
-Example: `NiceHashQuickMiner.exe --install`
+### UI Testing Commands
+Append these command line arguments to view specific dialogs:
 
-To revert this state simply delete your language file.
+| Command Line | Dialog Shown |
+| :--- | :--- |
+| `--install` | Download & Installer |
+| `--uninstall` | Uninstall Dialog |
+| `--count` | Windows start-up counter before standard launch |
+| `--updatedfrom 0.3.0.0` | Update-related message boxes before launch |
 
-### How to update language file?
+**Example:** `NiceHashQuickMiner.exe --install`
 
-When new strings are added or modified, version gets increased. Using selected language (set it in config file), execute:
-`NiceHashQuickMiner.exe --language-dump`
+*To revert, simply delete your custom language file.*
 
-This will dump your language file and make a console printout of missing strings. In production, missing strings are filled with English version of string. When existing strings are modified, it will be noted [here](/lang/UPDATES.md) which strings have been updated.
+---
 
-Again, file must be valid JSON format (verify!) and UTF8 encoded.
+## 🔄 How to Update a Language File
 
-When you have all the updates done, submit pull request.
+When strings are added or modified, the version number increases. To sync:
+
+1. Set your language in the config file.
+2. Execute: `NiceHashQuickMiner.exe --language-dump`
+3. This will dump your language file and print missing strings to the console. 
+4. Check [UPDATES.md](/lang/UPDATES.md) for a list of modified existing strings.
+5. Ensure the final file remains valid JSON and UTF-8 encoded before submitting your Pull Request.
+
+---
+
+## 🖋️ Special: Translating EULA RTF
+
+> [!IMPORTANT]
+> Requires the latest `NiceHashQuickMiner.exe`. [Download here](https://github.com/nicehash/NiceHashQuickMiner/releases).
+
+1. Write and style your text in **WordPad**.
+2. Save it as an RTF file (e.g., `example.rtf`).
+3. Run the conversion command:
+   `NiceHashQuickMiner.exe --port-rtf example.rtf translated.txt`
+4. Copy the content from `translated.txt` and paste it into your language JSON file.
+
+---
 
 
-### Special: Translating EULA RTF
-
-> NOTE: Must use latest NiceHashQuickMiner.exe; download: https://github.com/nicehash/NiceHashQuickMiner/releases
-
-Write text in WordPad first, style it and save into any file eg.: _example.rtf_. Then execute:
-
-`NiceHashQuickMiner.exe --port-rtf example.rtf translated.txt`
-
-Your translated and formatted text is ported and ready in file _translated.txt_. Copy it out and put into language file.
+file_path = "NiceHash_Multilanguage_Guide_v6.md"
